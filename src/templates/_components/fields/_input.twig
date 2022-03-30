@@ -1,0 +1,20 @@
+{#
+/**
+ * Markdown Editor Field plugin for Craft CMS 3.x
+ */
+#}
+{% import "_includes/forms" as _forms %}
+
+{% set config = {
+    id: name,
+    name: name,
+    value: value,
+    class: 'craft-easymde',
+    maxlength: field.charLimit,
+    showCharsLeft: true,
+    placeholder: field.placeholder|t('site'),
+    rows: field.initialRows,
+    disabled: false
+} %}
+
+{{ _forms.textarea(config) }}

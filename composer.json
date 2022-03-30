@@ -1,0 +1,42 @@
+{
+    "name": "juni/craft-markdown-editor",
+    "description": "Markdown Editor for Craft CMS.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "markdown",
+        "markdowneditor"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jurjen Nieuwenhuis",
+            "homepage": "http://www.kasanova.nl/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "juni\\markdowneditor\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Markdown Editor",
+        "handle": "markdown-editor",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "???",
+        "class": "juni\\markdowneditor\\MarkdownEditor"
+    },
+    "require": {
+        "craftcms/cms": "^3.1.0",
+        "erusev/parsedown": "^1.7",
+        "michelf/php-markdown": "^1.9",
+        "michelf/php-smartypants": "^1.8",
+        "mundschenk-at/php-typography": "^6.6",
+        "erusev/parsedown-extra": "^0.8.1"
+    }
+}
